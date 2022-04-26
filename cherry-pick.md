@@ -37,4 +37,14 @@
 1. Cherry Pick スクリプトを実行します (https://git.k8s.io/kubernetes/hack/cherry_pick_pull.sh)
 2. マージには通常のルール(レビュー＆承認)が適用されますが、追加の注意事項があります。
 
+# Cherry Pick スクリプト
+
+## 環境変数
+
+* DRY_RUN
+* REGENERATE_DOCS
+* UPSTREAM_REMOTE
+* FORK_REMOTE
+
+
 

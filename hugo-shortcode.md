@@ -118,30 +118,3 @@ This is page-2.
 </div>
 ```
 
-実際に、上記の記述をここに書いてみます。
-
-{{< tabs name="test-tab" >}}
-
-{{% tab name="Page-1" %}}
-
-This is page-1.
-
-* List-1
-
-* List-2
-
-  {{< note >}}
-  This is note on page-1.
-  {{< /note >}}
-
-{{% /tab %}}
-
-{{% tab name="Page-2" %}}
-
-This is page-2.
-
-{{% /tab %}}
-
-{{< /tabs >}}
-
-

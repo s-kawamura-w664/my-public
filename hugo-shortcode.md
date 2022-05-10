@@ -92,7 +92,8 @@ This is page-2.
 ```html
 <ul class="nav nav-tabs" id="test-tab" role="tablist">
   <li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#test-tab-0" role="tab" aria-controls="test-tab-0" aria-selected="true">Page-1</a></li>
-  <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#test-tab-1" role="tab" aria-controls="test-tab-1">Page-2</a></li></ul>
+  <li class="nav-item"><a data-toggle="tab" class="nav-link" href="#test-tab-1" role="tab" aria-controls="test-tab-1">Page-2</a></li>
+</ul>
 
 <div class="tab-content" id="test-tab">
   <div id="test-tab-0" class="tab-pane show active" role="tabpanel" aria-labelledby="test-tab-0">

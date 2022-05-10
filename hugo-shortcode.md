@@ -118,3 +118,26 @@ This is page-2.
 </div>
 ```
 
+```text
+* List-1
+
+* List-2
+
+  {{< note >}}
+  This is note.
+  {{< /note >}}
+```
+
+```html
+<ul>
+  <li>
+    <p>List-1</p>
+  </li>
+  <li>
+    <p>List-2</p>
+    <div class="alert alert-info note callout" role="alert">
+      <strong>Note:</strong> This is note.
+    </div>
+  </li>
+</ul>
+```

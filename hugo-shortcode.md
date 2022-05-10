@@ -109,7 +109,7 @@ This is page-2.
         <strong>Note:</strong> This is note on page-1.                 　<-- ここに</div> が無く
       </li>
     </ul>
-        </div>                                            <-- ここに来てしまう
+        </div>                                                           <-- ここに来てしまう
   </div>
   <div id="test-tab-1" class="tab-pane" role="tabpanel" aria-labelledby="test-tab-1">
     <p>

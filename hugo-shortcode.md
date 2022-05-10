@@ -118,6 +118,8 @@ This is page-2.
 </div>
 ```
 
+リストだけでは、このようなことは起きません。
+
 ```text
 * List-1
 
@@ -128,6 +130,8 @@ This is page-2.
   {{< /note >}}
 ```
 
+上記で出力されるHTMLは以下です。
+
 ```html
 <ul>
   <li>
@@ -137,7 +141,7 @@ This is page-2.
     <p>List-2</p>
     <div class="alert alert-info note callout" role="alert">
       <strong>Note:</strong> This is note.
-    </div>
+    </div>                                                   <-- これは正しい位置にある
   </li>
 </ul>
 ```

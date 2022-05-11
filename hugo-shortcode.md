@@ -18,7 +18,20 @@
 
 * ショートコードを利用する場合には、`{{< shortcode-name >}}` という記述が多く使用されていますが、`{{% shortcode-name %}}` という記述も可能です。
 
-## note.html
+## Kubernetesのカスタムショートコード
+
+Kubernetesのショートコードについては、以下に記載があります。
+
+* https://kubernetes.io/docs/contribute/style/style-guide/#shortcodes
+
+  スタイルガイドとして、Note, Caution, Warning の３つについての説明があります。
+
+
+* https://kubernetes.io/docs/contribute/style/hugo-shortcodes/
+
+  Kubernetesで使用できるカスタムショートコードが記載されています。
+
+### note.html
 
 Kubernetesでサポートしている note.html は、2022/05/11 時点では以下のように定義されています。
 

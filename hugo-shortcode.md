@@ -76,6 +76,8 @@ Kubernetesでサポートしている note.html は、2022/05/11 時点では以
 
 ### tabs.html
 
+Kubernetesでサポートしている note.html は、2022/05/11 時点では以下のように定義されています。
+
 ```html
 {{- .Page.Scratch.Add "tabset-counter" 1 -}}
 {{- $tab_set_id := .Get "name" | default (printf "tabset-%s-%d" (.Page.RelPermalink) (.Page.Scratch.Get "tabset-counter") ) | anchorize -}}

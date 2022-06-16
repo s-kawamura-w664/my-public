@@ -9,9 +9,7 @@ k8s のwebsiteは、mdファイルで記述した文書をHugoがHTMLに変換�
 
 具体的には、以下の様な記述が可能です。
 
-```md
 詳細は、{{< api-reference page="workload-resources/pod-v1" anchor="PodSpec" >}}や{{< api-reference page="workload-resources/pod-v1" anchor="environment-variables"  text="Environment Variable">}}のAPIリファレンスを参照ください。
-```
 
 これをドキュメントサイトで見ると、以下の様なイメージで表示されます。
 

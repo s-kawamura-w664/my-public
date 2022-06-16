@@ -7,6 +7,18 @@ https://github.com/kubernetes/website/pull/34272 にて、api-reference ショ�
 k8s のwebsiteは、mdファイルで記述した文書をHugoがHTMLに変換して表示しています。
 ショートコードとは、mdファイルに記述できる拡張構文のようなものです。
 
+具体的には、以下の様な記述が可能です。
+
+```md
+詳細は、{{< api-reference page="workload-resources/pod-v1" anchor="PodSpec" >}}や{{< api-reference page="workload-resources/pod-v1" anchor="environment-variables"  text="Environment Variable">}}のAPIリファレンスを参照ください。
+```
+
+これをドキュメントサイトで見ると、以下の様なイメージで表示されます。
+
+```html
+詳細は、<a href=>docs/reference/kubernetes-api/workload-resources/pod-v1/#PodSpec>PodSpec</a> や <a href=>docs/reference/kubernetes-api/workload-resources/pod-v1/#environment-variables>Environment Variable</a>のAPIリファレンスを参照ください。
+```
+
 api-referenceショートコードでは、具体的に以下の様な記述が可能です。
 
 1. {{< api-reference page="workload-resources/pod-v1" >}}

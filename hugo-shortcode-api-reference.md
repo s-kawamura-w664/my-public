@@ -15,7 +15,7 @@ k8s のwebsiteは、mdファイルで記述した文書をHugoがHTMLに変換�
 
 これをドキュメントサイトで見ると、以下の様なイメージで表示されます。
 
-詳細は、<a href=>docs/reference/kubernetes-api/workload-resources/pod-v1/#PodSpec>PodSpec</a> や <a href=>docs/reference/kubernetes-api/workload-resources/pod-v1/#environment-variables>Environment Variable</a>のAPIリファレンスを参照ください。
+詳細は、<a href=docs/reference/kubernetes-api/workload-resources/pod-v1/#PodSpec>PodSpec</a> や <a href=docs/reference/kubernetes-api/workload-resources/pod-v1/#environment-variables>Environment Variable</a>のAPIリファレンスを参照ください。
 
 api-referenceショートコードでは、具体的に以下の様な記述が可能です。
 

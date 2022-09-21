@@ -181,3 +181,13 @@ window.getPaginationAnchors = (pages) => {
 * 修正後
 
     ![](images/website_search/bing_anchor_2.png)
+
+## 検索エンジンをGoogleに変更すると
+
+* 検索結果
+
+    ![](images/website_search/google_result_1.png)
+    
+* ページのアンカー
+
+    ![](images/website_search/google_result_2.png)

@@ -134,7 +134,7 @@ window.renderBingSearchResults = () => {
 
     $.ajax(ajaxConf).done(function(res) {
         if (res.webPages == null){                                  //(1)
-            $('#bing-results-container').html("No data.");          //★ "No data."を表示
+            $('#bing-results-container').html("No data.");          //★ "No Results."を表示
             return;
         }
         var paginationAnchors = window.getPaginationAnchors(Math.ceil(res.webPages.totalEstimatedMatches / 10));

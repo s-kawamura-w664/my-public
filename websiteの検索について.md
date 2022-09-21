@@ -146,6 +146,14 @@ window.renderBingSearchResults = () => {
 }
 ```
 
+* 修正前
+
+    ![](images/website_search/bing_search_1.png)
+
+* 修正後
+
+    ![](images/website_search/bing_search_2.png)
+
 ## Bingエンジンの検索結果のページ用アンカーの表示改善例
 
 ```js
@@ -165,3 +173,11 @@ window.getPaginationAnchors = (pages) => {
     return pageAnchors;
 }
 ```
+
+* 修正前
+
+    ![](images/website_search/bing_anchor_1.png)
+
+* 修正後
+
+    ![](images/website_search/bing_anchor_2.png)

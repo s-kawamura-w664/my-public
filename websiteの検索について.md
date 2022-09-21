@@ -148,11 +148,13 @@ window.renderBingSearchResults = () => {
 
 * 修正前
 
-    ![](images/website_search/bing_search_1.png)
+    | ![](images/website_search/bing_search_1.png) |
+    | --- |
 
 * 修正後
 
-    ![](images/website_search/bing_search_2.png)
+    | ![](images/website_search/bing_search_2.png) |
+    | --- |
 
 ## Bingエンジンの検索結果のページ用アンカーの表示改善例
 
@@ -176,18 +178,27 @@ window.getPaginationAnchors = (pages) => {
 
 * 修正前
 
-    ![](images/website_search/bing_anchor_1.png)
+    | ![](images/website_search/bing_anchor_1.png) |
+    | --- |
 
 * 修正後
 
-    ![](images/website_search/bing_anchor_2.png)
+    | ![](images/website_search/bing_anchor_2.png) |
+    | --- |
 
 ## 検索エンジンをGoogleに変更すると
 
 * 検索結果
 
-    ![](images/website_search/google_result_1.png)
+    | ![](images/website_search/google_result_1.png) |
+    | --- |
     
 * ページのアンカー
 
-    ![](images/website_search/google_result_2.png)
+    | ![](images/website_search/google_result_2.png) |
+    | --- |
+
+* 検索結果が無い
+
+    | ![](images/website_search/google_no_result.png) |
+    | --- |

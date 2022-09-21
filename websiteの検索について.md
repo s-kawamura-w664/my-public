@@ -1,6 +1,6 @@
 # websiteの検索について
 
-kubernetesドキュメントサイト(https://kubernetes.io/docs/home/)の検索処理についての調査結果です。
+kubernetesドキュメントサイト( https://kubernetes.io/docs/home/ )の検索処理についての調査結果です。
 
 ## 検索処理の流れ
 
@@ -48,7 +48,7 @@ kubernetesドキュメントサイト(https://kubernetes.io/docs/home/)の検索
     ```
     
     * 最初は"is_china"がありませんので、cookieにis_chinaを登録します。
-      プロキシにより"https://ipinfo.io?token=796e43f4f146b1"へのアクセスがブロックされてしまうと、error条件となり"is_china=true"が設定されます。
+      プロキシにより "https://ipinfo.io?token=796e43f4f146b1" へのアクセスがブロックされてしまうと、error条件となり"is_china=true"が設定されます。
     * is_china=trueの場合は、検索エンジンにBingが使用されます。
     * is_china=falseの場合は、検索エンジンにGoogleが使用されます。
 

@@ -70,20 +70,20 @@ kubernetesドキュメントサイト( https://kubernetes.io/docs/home/ )の検�
         ajaxConf.beforeSend = function(xhr){ xhr.setRequestHeader('Ocp-Apim-Subscription-Key', '51efd23677624e04b4abe921225ea7ec'); };
 
         $.ajax(ajaxConf).done(function(res) {
-            if (res.webPages == null) return; // If no result, 'webPages' is 'undefined'          //①
+            if (res.webPages == null) return; // If no result, 'webPages' is 'undefined'          //(1)
             var paginationAnchors = window.getPaginationAnchors(Math.ceil(res.webPages.totalEstimatedMatches / 10));
             res.webPages.value.map(ob => { results += window.getResultMarkupString(ob); })
 
-            if($('#bing-results-container').length > 0) $('#bing-results-container').html(results);     //②
-            if($('#bing-pagination-container').length > 0) $('#bing-pagination-container').html(paginationAnchors);     //③
+            if($('#bing-results-container').length > 0) $('#bing-results-container').html(results);     //(2)
+            if($('#bing-pagination-container').length > 0) $('#bing-pagination-container').html(paginationAnchors);     //(3)
         });
     }
     ```
     
-    * ①のところで検索結果がnull(検索結果が無い)場合の処理がありません。
+    * (1)のところで検索結果がnull(検索結果が無い)場合の処理がありません。
       ここに処理が無いため、"Fetching results..." から画面が更新されません。
-    * 検索結果がある場合には、②のところで検索結果を表示しています。
-    * さらに、③のところで、検索結果のページ用アンカーを表示しています。
+    * 検索結果がある場合には、(2)のところで検索結果を表示しています。
+    * さらに、(3)のところで、検索結果のページ用アンカーを表示しています。
       ページ用アンカーは、getPaginationAnchors() で生成しています。
       ```js
       window.getPaginationAnchors = (pages) => {

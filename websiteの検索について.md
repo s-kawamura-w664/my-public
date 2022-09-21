@@ -52,7 +52,7 @@ kubernetesドキュメントサイト( https://kubernetes.io/docs/home/ )の検�
     * is_china=trueの場合は、検索エンジンにBingが使用されます。
     * is_china=falseの場合は、検索エンジンにGoogleが使用されます。
 
-3. Bingの場合、renderBingSearchResults()が呼ばれます。
+3. Bingエンジンの場合、renderBingSearchResults()が呼ばれます。
 
     ```js
     window.renderBingSearchResults = () => {
@@ -101,4 +101,67 @@ kubernetesドキュメントサイト( https://kubernetes.io/docs/home/ )の検�
       }
       ```
 
+4. Googleエンジンの場合、renderGoogleSearchResults()が呼ばれます。
 
+    ```js
+    window.renderGoogleSearchResults = () => {
+        var cx = '013288817511911618469:elfqqbqldzg';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    }    
+    ```
+
+## Bingエンジンで検索結果がnullの場合の対処例
+
+```
+window.renderBingSearchResults = () => {
+    var searchTerm  = window.location.search.split("=")[1].split("&")[0].replace(/%20/g,' '),
+        page        = window.location.search.split("=")[2],
+        q           = "site:kubernetes.io " + searchTerm;
+
+    page = (!page) ?  1 : page.split("&")[0];
+
+    var results = '', pagination = '', offset = (page - 1) * 10, ajaxConf = {};
+
+    ajaxConf.url = 'https://api.cognitive.microsoft.com/bingcustomsearch/v7.0/search';
+    ajaxConf.data =  { q: q, offset: offset, customConfig: '320659264' };
+    ajaxConf.type = "GET";
+    ajaxConf.beforeSend = function(xhr){ xhr.setRequestHeader('Ocp-Apim-Subscription-Key', '51efd23677624e04b4abe921225ea7ec'); };
+
+    $.ajax(ajaxConf).done(function(res) {
+        if (res.webPages == null){                                  //(1)
+            $('#bing-results-container').html("No data.");          //★ "No data."を表示
+            return;
+        }
+        var paginationAnchors = window.getPaginationAnchors(Math.ceil(res.webPages.totalEstimatedMatches / 10));
+        res.webPages.value.map(ob => { results += window.getResultMarkupString(ob); })
+
+        if($('#bing-results-container').length > 0) $('#bing-results-container').html(results);     //(2)
+        if($('#bing-pagination-container').length > 0) $('#bing-pagination-container').html(paginationAnchors);     //(3)
+    });
+}
+```
+
+## Bingエンジンの検索結果のページ用アンカーの表示改善例
+
+```js
+window.getPaginationAnchors = (pages) => {
+    var pageAnchors = '', searchTerm  = window.location.search.split("=")[1].split("&")[0].replace(/%20/g, ' ');
+    var currentPage = window.location.search.split("=")[2];
+    currentPage = (!currentPage) ?  1 : currentPage.split("&")[0];
+
+
+    for(var i = 1; i <= 10; i++){
+        if(i > pages) break;
+        pageAnchors += '<a class="bing-page-anchor" href="/search/?q='+searchTerm+'&page='+i+'">';
+        pageAnchors += (currentPage == i) ? '<b>'+i+'</b>' : i;
+        pageAnchors += '</a>';
+        pageAnchors += '&nbsp;&nbsp;&nbsp;'     //★ アンカーの間にスペースを入れる
+    }
+    return pageAnchors;
+}
+```

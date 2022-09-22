@@ -71,7 +71,7 @@ kubernetesドキュメントサイト( https://kubernetes.io/docs/home/ )の検�
     window.renderBingSearchResults = () => {
         var searchTerm  = window.location.search.split("=")[1].split("&")[0].replace(/%20/g,' '),
             page        = window.location.search.split("=")[2],
-            q           = "site:kubernetes.io " + searchTerm;
+            q           = "site:kubernetes.io " + searchTerm;                       // ★(1)
 
         page = (!page) ?  1 : page.split("&")[0];
 
@@ -83,20 +83,21 @@ kubernetesドキュメントサイト( https://kubernetes.io/docs/home/ )の検�
         ajaxConf.beforeSend = function(xhr){ xhr.setRequestHeader('Ocp-Apim-Subscription-Key', '51efd23677624e04b4abe921225ea7ec'); };
 
         $.ajax(ajaxConf).done(function(res) {
-            if (res.webPages == null) return; // If no result, 'webPages' is 'undefined'          //(1)
+            if (res.webPages == null) return; // If no result, 'webPages' is 'undefined'          // ★(2)
             var paginationAnchors = window.getPaginationAnchors(Math.ceil(res.webPages.totalEstimatedMatches / 10));
             res.webPages.value.map(ob => { results += window.getResultMarkupString(ob); })
 
-            if($('#bing-results-container').length > 0) $('#bing-results-container').html(results);     //(2)
-            if($('#bing-pagination-container').length > 0) $('#bing-pagination-container').html(paginationAnchors);     //(3)
+            if($('#bing-results-container').length > 0) $('#bing-results-container').html(results);     // ★(3)
+            if($('#bing-pagination-container').length > 0) $('#bing-pagination-container').html(paginationAnchors);     // ★(4)
         });
     }
     ```
     
-    * (1)のところで検索結果がnull(検索結果が無い)場合の処理がありません。
+    * (1)のところで検索条件を設定していますが、searchTerm がURLエンコードされたままです。
+    * (2)のところで検索結果がnull(検索結果が無い)場合の処理がありません。
       ここに処理が無いため、"Fetching results..." から画面が更新されません。
-    * 検索結果がある場合には、(2)のところで検索結果を表示しています。
-    * さらに、(3)のところで、検索結果のページ用アンカーを表示しています。
+    * 検索結果がある場合には、(3)のところで検索結果を表示しています。
+    * さらに、(4)のところで、検索結果のページ用アンカーを表示しています。
       ページ用アンカーは、getPaginationAnchors() で生成しています。
       ```js
       window.getPaginationAnchors = (pages) => {

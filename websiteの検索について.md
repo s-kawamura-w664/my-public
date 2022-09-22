@@ -186,6 +186,47 @@ window.getPaginationAnchors = (pages) => {
     | ![](images/website_search/bing_anchor_2.png) |
     | --- |
 
+## Bingエンジンで日本語対応の対応例
+
+```js
+window.renderBingSearchResults = () => {
+    var searchTerm  = window.location.search.split("=")[1].split("&")[0].replace(/%20/g,' '),
+        page        = window.location.search.split("=")[2],
+        q           = "site:kubernetes.io " + decodeURI(searchTerm);        //★searchTermをdecodeURIする
+
+    page = (!page) ?  1 : page.split("&")[0];
+
+    var results = '', pagination = '', offset = (page - 1) * 10, ajaxConf = {};
+
+    ajaxConf.url = 'https://api.cognitive.microsoft.com/bingcustomsearch/v7.0/search';
+    ajaxConf.data =  { q: q, offset: offset, customConfig: '320659264' };
+    ajaxConf.type = "GET";
+    ajaxConf.beforeSend = function(xhr){ xhr.setRequestHeader('Ocp-Apim-Subscription-Key', '51efd23677624e04b4abe921225ea7ec'); };
+
+    $.ajax(ajaxConf).done(function(res) {
+        if (res.webPages == null) {
+            $('#bing-results-container').html("No Results.");
+            return;
+        } // If no result, 'webPages' is 'undefined'
+        var paginationAnchors = window.getPaginationAnchors(Math.ceil(res.webPages.totalEstimatedMatches / 10));
+        res.webPages.value.map(ob => { results += window.getResultMarkupString(ob); })
+
+        if($('#bing-results-container').length > 0) $('#bing-results-container').html(results);
+        if($('#bing-pagination-container').length > 0) $('#bing-pagination-container').html(paginationAnchors);
+    });
+}
+```
+
+* 修正前
+
+    | ![](images/website_search/bing_japanese_1.png) |
+    | --- |
+
+* 修正後
+
+    | ![](images/website_search/bing_japanese_2.png) |
+    | --- |
+
 ## 検索エンジンをGoogleに変更すると
 
 * 検索結果

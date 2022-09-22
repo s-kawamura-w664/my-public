@@ -31,7 +31,7 @@ kubernetesドキュメントサイト( https://kubernetes.io/docs/home/ )の検�
     </gcse:searchresults-only>    
     ```
 
-2. 検索を実行すると、[search.js](https://github.com/kubernetes/website/blob/main/static/js/search.js)が実行されます。
+2. 検索を実行すると、search.js ( https://github.com/kubernetes/website/blob/main/static/js/search.js )が実行されます。
 
     ```js
     if (getCookie("is_china") === "") {

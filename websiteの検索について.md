@@ -257,3 +257,9 @@ window.renderBingSearchResults = () => {
 
     | ![](images/website_search/google_no_result.png) |
     | --- |
+
+## 関連するPR
+
+* https://github.com/kubernetes/website/pull/9845
+* https://github.com/kubernetes/website/pull/10166
+* https://github.com/kubernetes/website/pull/21823

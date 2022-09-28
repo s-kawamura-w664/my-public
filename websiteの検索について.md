@@ -16,7 +16,7 @@ kubernetesドキュメントサイト( https://kubernetes.io/docs/home/ )の検�
     * cookieに "is_china=true"が保存される
 * Bingエンジンで、日本語キーワードを検索する場合、キーワードがURLエンコードされていて正しく検索できない
 
-## cookie(is_china)を変更する方法
+## 対処法：cookie(is_china)を変更
 
 以下にEdgeでの編集方法を示しますが、Chromeでも類似の方法で編集できそう。
 

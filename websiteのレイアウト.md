@@ -132,7 +132,7 @@ websiteのツリーが狭くて、とても見づらい。
 
   ただし、このファイルは、"website/themes/docsy @ 1c77bb2" となっており、実体がgoogle/docsyリポジトリにあるので、このファイルを修正するわけにはいかない。
   
-* 類似のIssue/PRとしてコードブロックを幅を広げるものがありました。
+* 類似のIssue/PRとしてコードブロックの幅を広げるものがありました。
 
   * Issue: <https://github.com/kubernetes/website/issues/30097>
   * PR: <https://github.com/kubernetes/website/pull/30142>

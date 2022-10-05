@@ -109,5 +109,49 @@ websiteのツリーが狭くて、とても見づらい。
 
 ### 本文の右側に余白が多い
 
+* 中央のドキュメント領域の右側に余白あり
 
+  ![](images/website_layout/k8sdoc_p80_desc.png)
+  
+* 以下で横幅を80%に制限しています。
+
+  website/themes/docsy/assets/scss/support/_utilities.scss
+
+  ```css
+  .td-max-width-on-larger-screens {
+      @include media-breakpoint-up(lg) {
+          max-width: 80%;                           //★
+      }
+  }
+  ```
+
+  ただし、このファイルは、"website/themes/docsy @ 1c77bb2" となっており、実体がgoogle/docsyリポジトリにあるので、このファイルを修正するわけにはいかない。
+  
+* 類似のIssue/PRとしてコードブロックを幅を広げるものがありました。
+
+  * Issue: <https://github.com/kubernetes/website/issues/30097>
+  * PR: <https://github.com/kubernetes/website/pull/30142>
+
+  この修正では、以下のコードを追加しています。
+  
+  website/assets/scss/_custom.scss
+  
+  ```css
+  .td-documentation .td-content > .highlight {
+    max-width: initial;
+    width: 100%;
+  }  
+  ```
+
+* 同じように以下のコード追加で改善できる。
+
+  ```css
+  .td-documentation .td-content > p {
+    max-width: initial;
+    width: 100%;
+  }  
+  ```
+
+  ![](images/website_layout/k8sdoc_p100.png)
+  
 

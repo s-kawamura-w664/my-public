@@ -17,10 +17,10 @@ weightが同じページは、タイトル文字列の順序でソートされ�
 
 ### ドキュメント更新
 
-Issue: https://github.com/kubernetes/website/issues/36845
-PR: https://github.com/kubernetes/website/pull/36892
-
-日本語向けPR: https://github.com/kubernetes/website/pull/38913  (河村が対応)
+同一階層では、重複するweightを使用しないことを明記する。
+- Issue: https://github.com/kubernetes/website/issues/36845
+- PR: https://github.com/kubernetes/website/pull/36892
+- 日本語向けPR: https://github.com/kubernetes/website/pull/38913  (河村が対応)
 
 ### weight修正
 

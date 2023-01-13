@@ -1,6 +1,6 @@
 # websiteのweight更新に関して
 
-## [#35093](https://github.com/kubernetes/website/issues/35093)の概要
+## Issue[#35093](https://github.com/kubernetes/website/issues/35093)の概要
 
 weightが同じページは、タイトル文字列の順序でソートされます。ローカライズされたページは、英語のドキュメントと順序が異なる場合があります。
 ローカリゼーションチームは、正しい順序にするために、各言語に応じてweightを変更する場合がありますが、英語のドキュメントでweightを変更した方が良いと思います。

@@ -32,10 +32,10 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 ### weight修正
 
 - [ ] https://github.com/kubernetes/website/pull/37470 content/en/docs/concepts/extend-kubernetes/api-extension/
-- [ ] https://github.com/kubernetes/website/pull/37471 content/en/docs/concepts/containers
+- [ ] https://github.com/kubernetes/website/pull/37471 content/en/docs/concepts/containers/
 - [ ] https://github.com/kubernetes/website/pull/37472 content/en/docs/concepts/workloads/pods/
 - [ ] https://github.com/kubernetes/website/pull/37473 content/en/docs/concepts/architecture/
-- [ ] https://github.com/kubernetes/website/pull/37474 content/en/docs/concepts/overview/working-with-objects ([ja] https://github.com/kubernetes/website/pull/38913)
+- [ ] https://github.com/kubernetes/website/pull/37474 content/en/docs/concepts/overview/working-with-objects/ ([ja] https://github.com/kubernetes/website/pull/38913)
 - [ ] https://github.com/kubernetes/website/pull/37476 content/en/docs/reference/kubernetes-api/cluster-resources/ 自動生成されるページのため保留中
 - [ ] https://github.com/kubernetes/website/pull/37479 content/en/docs/concepts/overview/
 - [ ] https://github.com/kubernetes/website/pull/37480 content/en/docs/contribute/
@@ -51,7 +51,7 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 - [ ] https://github.com/kubernetes/website/pull/37716 content/en/docs/concepts/
 - [ ] https://github.com/kubernetes/website/pull/37717 content/en/docs/reference/
 - [ ] https://github.com/kubernetes/website/pull/38872 content/en/docs/tutorials/security/
-- [ ] https://github.com/kubernetes/website/pull/38887 tasks/administer-cluster
+- [ ] https://github.com/kubernetes/website/pull/38887 content/en/docs/tasks/administer-cluster/
 
 tasks配下がまだ残っている様子。
 

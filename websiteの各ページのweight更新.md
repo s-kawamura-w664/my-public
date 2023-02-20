@@ -35,9 +35,9 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 - [ ] https://github.com/kubernetes/website/pull/37471 content/en/docs/concepts/containers/
 - [ ] https://github.com/kubernetes/website/pull/37472 content/en/docs/concepts/workloads/pods/
 - [ ] https://github.com/kubernetes/website/pull/37473 content/en/docs/concepts/architecture/
-- [ ] https://github.com/kubernetes/website/pull/37474 content/en/docs/concepts/overview/working-with-objects/ ([ja] https://github.com/kubernetes/website/pull/38913)
+- [x] https://github.com/kubernetes/website/pull/37474 content/en/docs/concepts/overview/working-with-objects/ ([ja] https://github.com/kubernetes/website/pull/38913)
 - [ ] https://github.com/kubernetes/website/pull/37476 content/en/docs/reference/kubernetes-api/cluster-resources/ 自動生成されるページのため保留中
-- [ ] https://github.com/kubernetes/website/pull/37479 content/en/docs/concepts/overview/ ([ja] https://github.com/kubernetes/website/pull/39073)
+- [x] https://github.com/kubernetes/website/pull/37479 content/en/docs/concepts/overview/ ([ja] https://github.com/kubernetes/website/pull/39073)
 - [ ] https://github.com/kubernetes/website/pull/37480 content/en/docs/contribute/
 - [ ] https://github.com/kubernetes/website/pull/37482 content/en/docs/setup/
 - [ ] https://github.com/kubernetes/website/pull/37484 content/en/docs/concepts/cluster-administration/

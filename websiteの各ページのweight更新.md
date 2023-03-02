@@ -44,9 +44,9 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 - [ ] https://github.com/kubernetes/website/pull/37485 content/en/docs/reference/access-authn-authz/
 - [ ] https://github.com/kubernetes/website/pull/37488 content/en/docs/tutorials/services/
 - [ ] https://github.com/kubernetes/website/pull/37492 content/en/docs/concepts/security/
-- [ ] https://github.com/kubernetes/website/pull/37494 content/en/docs/concepts/services-networking/ ([ja] https://github.com/kubernetes/website/pull/39559)
+- [X] https://github.com/kubernetes/website/pull/37494 content/en/docs/concepts/services-networking/ ([ja] https://github.com/kubernetes/website/pull/39559)
 - [ ] https://github.com/kubernetes/website/pull/37495 content/en/docs/concepts/storage/
-- [ ] https://github.com/kubernetes/website/pull/37511 content/en/docs/concepts/scheduling-eviction/ ([ja] https://github.com/kubernetes/website/pull/39564)
+- [X] https://github.com/kubernetes/website/pull/37511 content/en/docs/concepts/scheduling-eviction/ ([ja] https://github.com/kubernetes/website/pull/39564)
 - [ ] https://github.com/kubernetes/website/pull/37678 content/en/docs/concepts/services-networking/
 - [ ] https://github.com/kubernetes/website/pull/37716 content/en/docs/concepts/
 - [ ] https://github.com/kubernetes/website/pull/37717 content/en/docs/reference/

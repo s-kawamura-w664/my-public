@@ -49,7 +49,7 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 - [X] https://github.com/kubernetes/website/pull/37511 content/en/docs/concepts/scheduling-eviction/ ([ja] https://github.com/kubernetes/website/pull/39564)
 - [ ] https://github.com/kubernetes/website/pull/37678 content/en/docs/concepts/services-networking/
 - [ ] https://github.com/kubernetes/website/pull/37716 content/en/docs/concepts/
-- [ ] https://github.com/kubernetes/website/pull/37717 content/en/docs/reference/
+- [ ] https://github.com/kubernetes/website/pull/37717 content/en/docs/reference/ ([ja] https://github.com/kubernetes/website/pull/39771)
 - [ ] https://github.com/kubernetes/website/pull/38872 content/en/docs/tutorials/security/
 - [ ] https://github.com/kubernetes/website/pull/38887 content/en/docs/tasks/administer-cluster/
 

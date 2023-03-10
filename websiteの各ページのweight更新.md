@@ -38,7 +38,7 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 - [x] https://github.com/kubernetes/website/pull/37474 content/en/docs/concepts/overview/working-with-objects/ ([ja] https://github.com/kubernetes/website/pull/38913)
 - [ ] https://github.com/kubernetes/website/pull/37476 content/en/docs/reference/kubernetes-api/cluster-resources/ 自動生成されるページのため保留中
 - [x] https://github.com/kubernetes/website/pull/37479 content/en/docs/concepts/overview/ ([ja] https://github.com/kubernetes/website/pull/39073)
-- [ ] https://github.com/kubernetes/website/pull/37480 content/en/docs/contribute/
+- [ ] https://github.com/kubernetes/website/pull/37480 content/en/docs/contribute/ ([ja] https://github.com/kubernetes/website/pull/39901)
 - [ ] https://github.com/kubernetes/website/pull/37482 content/en/docs/setup/
 - [ ] https://github.com/kubernetes/website/pull/37484 content/en/docs/concepts/cluster-administration/ ([ja] https://github.com/kubernetes/website/pull/39869)
 - [ ] https://github.com/kubernetes/website/pull/37485 content/en/docs/reference/access-authn-authz/

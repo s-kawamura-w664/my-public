@@ -31,16 +31,16 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 
 ### weight修正
 
-- [ ] https://github.com/kubernetes/website/pull/37470 content/en/docs/concepts/extend-kubernetes/api-extension/
-- [ ] https://github.com/kubernetes/website/pull/37471 content/en/docs/concepts/containers/
+- [ ] https://github.com/kubernetes/website/pull/37470 content/en/docs/concepts/extend-kubernetes/api-extension/ ([ja] https://github.com/kubernetes/website/pull/39869)
+- [ ] https://github.com/kubernetes/website/pull/37471 content/en/docs/concepts/containers/ ([ja] https://github.com/kubernetes/website/pull/39869)
 - [ ] https://github.com/kubernetes/website/pull/37472 content/en/docs/concepts/workloads/pods/
-- [ ] https://github.com/kubernetes/website/pull/37473 content/en/docs/concepts/architecture/
+- [ ] https://github.com/kubernetes/website/pull/37473 content/en/docs/concepts/architecture/ ([ja] https://github.com/kubernetes/website/pull/39869)
 - [x] https://github.com/kubernetes/website/pull/37474 content/en/docs/concepts/overview/working-with-objects/ ([ja] https://github.com/kubernetes/website/pull/38913)
 - [ ] https://github.com/kubernetes/website/pull/37476 content/en/docs/reference/kubernetes-api/cluster-resources/ 自動生成されるページのため保留中
 - [x] https://github.com/kubernetes/website/pull/37479 content/en/docs/concepts/overview/ ([ja] https://github.com/kubernetes/website/pull/39073)
 - [ ] https://github.com/kubernetes/website/pull/37480 content/en/docs/contribute/
 - [ ] https://github.com/kubernetes/website/pull/37482 content/en/docs/setup/
-- [ ] https://github.com/kubernetes/website/pull/37484 content/en/docs/concepts/cluster-administration/
+- [ ] https://github.com/kubernetes/website/pull/37484 content/en/docs/concepts/cluster-administration/ ([ja] https://github.com/kubernetes/website/pull/39869)
 - [ ] https://github.com/kubernetes/website/pull/37485 content/en/docs/reference/access-authn-authz/
 - [ ] https://github.com/kubernetes/website/pull/37488 content/en/docs/tutorials/services/
 - [ ] https://github.com/kubernetes/website/pull/37492 content/en/docs/concepts/security/ ([ja] https://github.com/kubernetes/website/pull/39797)

@@ -33,7 +33,7 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 
 - [ ] https://github.com/kubernetes/website/pull/37470 content/en/docs/concepts/extend-kubernetes/api-extension/ ([ja] https://github.com/kubernetes/website/pull/39869)
 - [ ] https://github.com/kubernetes/website/pull/37471 content/en/docs/concepts/containers/ ([ja] https://github.com/kubernetes/website/pull/39869)
-- [ ] https://github.com/kubernetes/website/pull/37472 content/en/docs/concepts/workloads/pods/
+- [ ] https://github.com/kubernetes/website/pull/37472 content/en/docs/concepts/workloads/pods/ ([ja] 該当ページ無し⇒未翻訳)
 - [ ] https://github.com/kubernetes/website/pull/37473 content/en/docs/concepts/architecture/ ([ja] https://github.com/kubernetes/website/pull/39869)
 - [x] https://github.com/kubernetes/website/pull/37474 content/en/docs/concepts/overview/working-with-objects/ ([ja] https://github.com/kubernetes/website/pull/38913)
 - [ ] https://github.com/kubernetes/website/pull/37476 content/en/docs/reference/kubernetes-api/cluster-resources/ 自動生成されるページのため保留中

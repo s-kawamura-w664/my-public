@@ -37,7 +37,7 @@ static
 
 ### 修正対象のページ一覧
 
-|ファイル名     |状態|コメント|
+|ファイル名     |更新|コメント|
 |---            |--- |---     |
 |content/en/docs/concepts/architecture/garbage-collection.md                    |new    |#31063でjaにも作成済み<br>(2022/4/3 マージされた) |
 |content/en/docs/concepts/cluster-administration/kubelet-garbage-collection.md  |delete |jaにはまだ残っている        |

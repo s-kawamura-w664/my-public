@@ -39,13 +39,13 @@ static
 
 |ファイル名     |状態|コメント|
 |---            |--- |---     |
-|content/en/docs/concepts/architecture/garbage-collection.md                    |new    |#31063でjaにも作成済み(2022/4/3 マージされた) |
+|content/en/docs/concepts/architecture/garbage-collection.md                    |new    |#31063でjaにも作成済み<br>(2022/4/3 マージされた) |
 |content/en/docs/concepts/cluster-administration/kubelet-garbage-collection.md  |delete |jaにはまだ残っている        |
-|content/en/docs/concepts/containers/images.md                                  |modify |#35809でjaも最新化されており反映済み(2022/9/9 マージされた) |
-|content/en/docs/concepts/overview/working-with-objects/finalizers.md           |new    |#38768でjaにも作成済み(2023/2/3 マージされた) |
-|content/en/docs/concepts/overview/working-with-objects/owners-dependents.md    |new    |#38794でjaにも作成済み(2023/2/3 マージされた) |
+|content/en/docs/concepts/containers/images.md                                  |modify |#35809でjaも最新化<br>(2022/9/9 マージされた) |
+|content/en/docs/concepts/overview/working-with-objects/finalizers.md           |new    |#38768でjaにも作成済み<br>(2023/2/3 マージされた) |
+|content/en/docs/concepts/overview/working-with-objects/owners-dependents.md    |new    |#38794でjaにも作成済み<br>(2023/2/3 マージされた) |
 |content/en/docs/concepts/workloads/controllers/garbage-collection.md           |delete |jaにはまだ残っている        |
-|content/en/docs/reference/glossary/finalizer.md                                |new    |#38768でjaにも作成済み(2023/2/3 マージされた) |
+|content/en/docs/reference/glossary/finalizer.md                                |new    |#38768でjaにも作成済み<br>(2023/2/3 マージされた) |
 |content/en/docs/reference/glossary/garbage-collection.md                       |new    |#39948でjaのレビュー中        |
 |content/en/docs/tasks/administer-cluster/use-cascading-deletion.md             |new    |#39960でjaのレビュー中        |
 |static/_redirects                                                              |modify |言語共通                    |

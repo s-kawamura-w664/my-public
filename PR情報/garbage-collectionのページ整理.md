@@ -46,6 +46,8 @@ static
 |content/en/docs/concepts/overview/working-with-objects/owners-dependents.md    |new    |#38794でjaにも作成済み(2023/2/3 マージされた) |
 |content/en/docs/concepts/workloads/controllers/garbage-collection.md           |delete |jaにはまだ残っている        |
 |content/en/docs/reference/glossary/finalizer.md                                |new    |#38768でjaにも作成済み(2023/2/3 マージされた) |
-|content/en/docs/reference/glossary/garbage-collection.md                       |new    |        |
-|content/en/docs/tasks/administer-cluster/use-cascading-deletion.md             |new    |        |
-|static/_redirects                                                              |modify |言語共通の     |
+|content/en/docs/reference/glossary/garbage-collection.md                       |new    |#39948でjaのレビュー中        |
+|content/en/docs/tasks/administer-cluster/use-cascading-deletion.md             |new    |#39960でjaのレビュー中        |
+|static/_redirects                                                              |modify |言語共通                    |
+
+現在、#39948、#39960 でレビュー中のため、この２件が完了すると、deleteを除いてすべて作業済みとなるため、deleteしてしまっても問題ない。

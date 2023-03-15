@@ -39,10 +39,10 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 - [ ] https://github.com/kubernetes/website/pull/37476 content/en/docs/reference/kubernetes-api/cluster-resources/ 自動生成されるページのため保留中
 - [x] https://github.com/kubernetes/website/pull/37479 content/en/docs/concepts/overview/ ([ja] https://github.com/kubernetes/website/pull/39073)
 - [ ] https://github.com/kubernetes/website/pull/37480 content/en/docs/contribute/ ([ja] https://github.com/kubernetes/website/pull/39901)
-- [ ] https://github.com/kubernetes/website/pull/37482 content/en/docs/setup/
+- [ ] https://github.com/kubernetes/website/pull/37482 content/en/docs/setup/ ([ja] https://github.com/kubernetes/website/pull/39907)
 - [ ] https://github.com/kubernetes/website/pull/37484 content/en/docs/concepts/cluster-administration/ ([ja] https://github.com/kubernetes/website/pull/39869)
 - [ ] https://github.com/kubernetes/website/pull/37485 content/en/docs/reference/access-authn-authz/
-- [ ] https://github.com/kubernetes/website/pull/37488 content/en/docs/tutorials/services/
+- [ ] https://github.com/kubernetes/website/pull/37488 content/en/docs/tutorials/services/ ([ja] https://github.com/kubernetes/website/pull/39907)
 - [ ] https://github.com/kubernetes/website/pull/37492 content/en/docs/concepts/security/ ([ja] https://github.com/kubernetes/website/pull/39797)
 - [X] https://github.com/kubernetes/website/pull/37494 content/en/docs/concepts/services-networking/ ([ja] https://github.com/kubernetes/website/pull/39559)
 - [ ] https://github.com/kubernetes/website/pull/37495 content/en/docs/concepts/storage/ ([ja] https://github.com/kubernetes/website/pull/39797)
@@ -50,8 +50,9 @@ https://hackmd.io/VtoYICL6SnGaL_QaySrbcw?view
 - [ ] https://github.com/kubernetes/website/pull/37678 content/en/docs/concepts/services-networking/
 - [ ] https://github.com/kubernetes/website/pull/37716 content/en/docs/concepts/ ([ja] https://github.com/kubernetes/website/pull/39797)
 - [ ] https://github.com/kubernetes/website/pull/37717 content/en/docs/reference/ ([ja] https://github.com/kubernetes/website/pull/39771)
-- [ ] https://github.com/kubernetes/website/pull/38872 content/en/docs/tutorials/security/
+- [ ] https://github.com/kubernetes/website/pull/38872 content/en/docs/tutorials/security/ ([ja] https://github.com/kubernetes/website/pull/39907)
 - [ ] https://github.com/kubernetes/website/pull/38887 content/en/docs/tasks/administer-cluster/
+- [ ] https://github.com/kubernetes/website/pull/38920 content/en/docs/tasks/
 
 tasks配下がまだ残っている様子。
 
